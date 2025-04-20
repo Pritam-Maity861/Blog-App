@@ -1,0 +1,47 @@
+@import "@flaticon/flaticon-uicons/css/all/all";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  * {
+      @apply m-0 p-0 box-border text-base duration-100;
+  }
+
+  html{
+      @apply overflow-x-hidden;
+  }
+
+  body {
+      @apply font-inter font-normal text-black;
+  }
+
+  i {
+      @apply mt-0.5;
+  }
+
+  img{
+      @apply w-full h-full object-cover;
+  }
+
+  .hide{
+      @apply opacity-0 pointer-events-none duration-100;
+  }
+
+  .show{
+      @apply opacity-100 pointer-events-auto;
+  }
+
+  #textEditor h1, h1 {
+    @apply font-charter text-2xl leading-normal font-bold max-md:text-4xl max-md:leading-snug !important;
+}
+
+  #textEditor h2, h2{
+      @apply font-inter text-2xl leading-normal font-bold max-md:text-2xl max-md:leading-snug !important;
+  }
+
+  #textEditor h3, h3{
+      @apply font-inter text-xl leading-loose max-md:text-xl max-md:leading-normal !important;
+  }
+}
